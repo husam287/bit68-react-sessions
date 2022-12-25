@@ -4,6 +4,8 @@ import ScreenWrapper from 'components/General/ScreenWrapper'
 import { UseStateComponent } from 'components/useState';
 import { ImmutabilityUseState } from 'components/immutabilityUseState';
 import { Parent } from 'components/ParentChild/Parent';
+import SameReferenceOpt from 'components/Optimization/SameReferenceOpt';
+import MemoOpt from 'components/Optimization/MemoOpt';
 
 export default function Home() {
 
@@ -14,9 +16,13 @@ export default function Home() {
 
         {/* <ImmutabilityUseState /> */}
 
-        <Parent />
+        {/* <Parent /> */}
+
+        {/* <SameReferenceOpt /> */}
+
+        <MemoOpt />
       </Container>
-    </ScreenWrapper>
+    </ScreenWrapper >
   )
 }
 
