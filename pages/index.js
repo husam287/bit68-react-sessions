@@ -6,6 +6,8 @@ import { ImmutabilityUseState } from 'components/immutabilityUseState';
 import { Parent } from 'components/ParentChild/Parent';
 import SameReferenceOpt from 'components/Optimization/SameReferenceOpt';
 import MemoOpt from 'components/Optimization/MemoOpt';
+import IncorrectMemoOpt1 from 'components/IncorrectMemoUsage/IncorrectMemoOpt1';
+import IncorrectMemoOpt2 from 'components/IncorrectMemoUsage/IncorrectMemoOpt2';
 
 export default function Home() {
 
@@ -20,7 +22,12 @@ export default function Home() {
 
         {/* <SameReferenceOpt /> */}
 
-        <MemoOpt />
+        {/* <MemoOpt /> */}
+
+        {/* <IncorrectMemoOpt1 /> */}
+
+        <IncorrectMemoOpt2 />
+
       </Container>
     </ScreenWrapper >
   )
