@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
     autoLogin()
     langAdjustment()
   }, [])
-
+  
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
